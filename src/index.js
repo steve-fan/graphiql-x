@@ -5,6 +5,6 @@ import '../node_modules/graphiql/graphiql.css';
 import './index.css';
 
 ReactDOM.render(
-  <CustomGraphiQL />,
+  <CustomGraphiQL url='http://localhost:3000/graphql' />,
   document.body
 );

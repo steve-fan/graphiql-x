@@ -7,7 +7,7 @@ class CustomGraphiQL extends React.Component {
     super(props);
 
     this.state = {
-      url: props.url || (window.location.origin + '/graphql'),
+      url: props.url,
       inputVisible: false
     };
 
@@ -62,6 +62,8 @@ class CustomGraphiQL extends React.Component {
   }
 }
 
-CustomGraphiQL.propTypes = {};
+CustomGraphiQL.propTypes = {
+  url: React.PropTypes.string.isRequired
+};
 
 export default CustomGraphiQL;
